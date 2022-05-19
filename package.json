@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "create-tables": "node -r dotenv/config setup-db.js"
+    "create-tables": "node -r dotenv/config setup-db.js",
+    "start": "node -r dotenv/config index.js",
+    "start:watch": "nodemon -r dotenv/config index.js"
   },
   "author": "karl",
   "license": "ISC",
